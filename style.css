@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+/* POS: TOP RIGHT BOTTOM LEFT*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+/* Navigation Area */
+#nav-sect {
+  background-color: #000000;
+  margin: auto;
+  margin-top: 30px;
+  text-align: end;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+ul li a {
+  color: #f5f5f5;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #3b82f6;
+}
+
+/* Main Area */
+main {
+  color: #f5f5f5;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 6%;
+  display: flex;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  padding: 0 30px;
+  min-height: 60vh;
+}
+
+#main-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#h1-div {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#h1-div h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+#h1-div p {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  opacity: 0.8;
+}
+
+/* Section Area */
+#sect-tab {
+  color: #f5f5f5;
+  padding: 15% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 100%;
+}
+
+#sect-tab,
+#about-div {
+  font-size: 25px;
+  font-family: "Outfit", sans-serif;
+  text-align: justify;
+}
+
+#contact-div {
+  max-width: 600px;
+  margin: 20% 0% 5% 25%; /* centers the form */
+  padding: 40px 30px; /* comfortable internal spacing */
+  background-color: #fff; /* dark background to match your site */
+  border-radius: 1%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+#contact-div form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 24%; /* consistent vertical spacing */
+}
+
+#contact-div label {
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  padding: 2% 2% 2% 1%;
+  background-color: #fff;
+  color: #000; /* better contrast on dark bg */
+  margin-bottom: 6px;
+}
+
+#contact-div input,
+#contact-div textarea {
+  width: 100%; /* fixed: no more 150% */
+  padding: 14px 16px; /* reasonable padding */
+  background-color: #fff;
+  border: 1px solid #ccc; /* subtle border */
+  border-radius: 8px;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+}
+
+#contact-div textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+#contact-div button {
+  margin-top: 10px; /* only top margin needed */
+  padding: 14px 32px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+#contact-div button:hover {
+  background-color: #2563eb;
+}
+
+/* ==================== */
+/* TABLET (max 1024px)  */
+/* ==================== */
+@media (max-width: 1024px) {
+  #nav-sect {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  main {
+    gap: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 280px;
+  }
+
+  #h1-div h1 {
+    font-size: 2rem;
+  }
+
+  #h1-div p {
+    font-size: 0.9rem;
+  }
+}
+
+#contact-div {
+  max-width: 600px;
+  margin: 20% 0% 5% 0%; /* centers the form */
+  padding: 40px 30px; /* comfortable internal spacing */
+  background-color: #fff; /* dark background to match your site */
+  border-radius: 1%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+#contact-div form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 24%; /* consistent vertical spacing */
+}
+
+#contact-div label {
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  padding: 2% 2% 2% 1%;
+  background-color: #fff;
+  color: #000; /* better contrast on dark bg */
+  margin-bottom: 6px;
+}
+
+#contact-div input,
+#contact-div textarea {
+  width: 100%; /* fixed: no more 150% */
+  padding: 14px 16px; /* reasonable padding */
+  background-color: #fff;
+  border: 1px solid #ccc; /* subtle border */
+  border-radius: 8px;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+}
+
+#contact-div textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+#contact-div button {
+  margin-top: 10px; /* only top margin needed */
+  padding: 14px 32px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+#contact-div button:hover {
+  background-color: #2563eb;
+}
+
+/* ==================== */
+/* MOBILE (max 768px)   */
+/* ==================== */
+@media (max-width: 768px) {
+  #nav-sect {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  ul {
+    gap: 5px;
+  }
+
+  ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 25px;
+    min-height: auto;
+  }
+
+  #main-div {
+    order: 1;
+  }
+
+  #h1-div {
+    order: 2;
+    align-items: center;
+  }
+
+  img {
+    max-width: 500px;
+    margin-top: 0;
+  }
+
+  #h1-div h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #h1-div p {
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+/* ======================== */
+/* SMALL MOBILE (max 480px) */
+/* ======================== */
+@media (max-width: 480px) {
+  ul {
+    gap: 0;
+  }
+
+  ul li a {
+    font-size: 80%;
+    padding: 10px 8px;
+    display: inline-block;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  img {
+    max-width: 320px;
+  }
+
+  #h1-div h1 {
+    font-size: 1.25rem;
+  }
+
+  #h1-div p {
+    font-size: 0.75rem;
+  }
+}
